@@ -19,7 +19,7 @@ export default function Hero({ name, role, intro, learning }: HeroProps) {
         <div className="absolute inset-x-0 bottom-[-120px] h-64 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent" />
       </div>
 
-      <div className="mx-auto flex max-w-5xl flex-col gap-10 px-4 py-16 md:py-20 lg:flex-row lg:items-center">
+      <div className="mx-auto flex max-w-5xl flex-col gap-10 px-4 py-14 md:py-18 lg:flex-row lg:items-center">
         <div className="flex-1 space-y-6">
           <p className="inline-flex items-center gap-2 rounded-full border border-slate-800 bg-slate-900/70 px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-slate-400">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
@@ -45,13 +45,13 @@ export default function Hero({ name, role, intro, learning }: HeroProps) {
           <div className="flex flex-wrap gap-3 pt-2">
             <Link
               href="#projects"
-              className="inline-flex items-center justify-center rounded-full bg-sky-500 px-5 py-2 text-sm font-medium text-slate-950 shadow-lg shadow-sky-500/30 transition hover:bg-sky-400"
+              className="inline-flex min-w-[140px] items-center justify-center rounded-full bg-sky-500 px-5 py-2 text-sm font-medium text-slate-950 shadow-lg shadow-sky-500/30 transition hover:bg-sky-400"
             >
               View projects
             </Link>
             <Link
               href="#contact"
-              className="inline-flex items-center justify-center rounded-full border border-slate-700 bg-slate-900/60 px-5 py-2 text-sm font-medium text-slate-100 transition hover:border-sky-500/60 hover:bg-slate-900"
+              className="inline-flex min-w-[140px] items-center justify-center rounded-full border border-slate-700 bg-slate-900/60 px-5 py-2 text-sm font-medium text-slate-100 transition hover:border-sky-500/60 hover:bg-slate-900"
             >
               Contact me
             </Link>
@@ -91,7 +91,7 @@ export default function Hero({ name, role, intro, learning }: HeroProps) {
               ))}
             </div>
 
-            <div className="mt-6 grid grid-cols-2 gap-3 text-xs text-slate-300">
+            <div className="mt-6 grid grid-cols-1 gap-3 text-xs text-slate-300 sm:grid-cols-2">
               <div className="rounded-xl border border-slate-800 bg-slate-950/60 p-3">
                 <p className="text-[11px] uppercase tracking-wide text-slate-500">
                   Goal for this year
@@ -120,4 +120,6 @@ export default function Hero({ name, role, intro, learning }: HeroProps) {
     </section>
   );
 }
+
+
 

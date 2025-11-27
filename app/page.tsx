@@ -5,10 +5,10 @@ import Hero from "./components/Hero"
 
 export default function HomePage() {
   const skills: Skill[] = [
-    { name: "JavaScript", level: "learning" },
-    { name: "React", level: "learning" },
+    { name: "JavaScript", level: "intermediate" },
+    { name: "React", level: "intermediate" },
     { name: "Next.js", level: "beginner" },
-    { name: "TypeScript", level: "beginner" }
+    { name: "TypeScript", level: "intermediate" }
   ]
 
   return (
